@@ -1,4 +1,7 @@
-﻿int num1 = 20;
-int num2 = 22;
-int soma = num1 - num2;
-Console.WriteLine($"A soma de {num1} e {num2} é igual a: {soma}");
+﻿using exemplosCSharp.fixacao;
+
+Console.WriteLine("Informe a medida em metros:");
+int metros = int.Parse(Console.ReadLine());
+
+int milimetros = MetrosMilimetross.ConverterMetrosParaMilimetros(metros);
+Console.WriteLine("A medida em milímetros é: " + milimetros);
